@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
+
 const Hero = () => {
   return (
     <div>
-      <div className='h-screen bg-cover bg-model-y bg-no-repeat bg-center'>
+      <div className='h-screen bg-cover bg-no-repeat bg-center bg-model-y'>
 
         <Navbar/>
 
