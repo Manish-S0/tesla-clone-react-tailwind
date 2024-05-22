@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { TfiHelpAlt } from "react-icons/tfi";
 import { SlGlobe } from "react-icons/sl";
 import { VscAccount } from "react-icons/vsc";
 import { IoMdClose } from "react-icons/io";
+
+import Menu from './Menu';
 
 const Navbar = () => {
   const [nav,setNav]=useState(false)
@@ -10,6 +12,20 @@ const Navbar = () => {
   const handleNav=()=>{
     setNav(!nav)
   }
+  // useEffect(()=>{
+  //   const handleNav=()=>{
+  //     if (window.innerWidth>768) {
+  //       setNav(false)
+  //     }
+  //     else{
+  //       setNav(!nav)
+  //     }
+  //   }
+  //   window.addEventListener('resize',handleNav);
+  //   return ()=>{
+  //     window.removeEventListener('resize',handleNav)
+  //   }
+  // },[])
   return (
     <div className='flex justify-between items-center px-10 p-4 text-sm font-medium'>
       <div >
@@ -25,7 +41,7 @@ const Navbar = () => {
           <li className='py-1 px-3 hover:shadow'>Shop</li>
         </ul>
       </div>
-      {/* <div className='hidden lg:inline'>
+      <div className='hidden lg:inline'>
         <ul className='flex justify-center hover:cursor-pointer'>
           <li className='py-1 px-1 mx-1 hover:shadow'>
           <TfiHelpAlt size={20} />
@@ -37,24 +53,20 @@ const Navbar = () => {
             <VscAccount size={20}/>
           </li>
         </ul>
-      </div> */}
+      </div>
+
       <div className='lg:hidden'>
         <button onClick={handleNav} className='inline-flex rounded-md py-2 px-4 p-2 text-sm font-medium bg-black/5 shadow-sm hover:bg-black/10 items-center'>
           Menu
         </button>
       </div>
-      <div className={nav?'bg-white absolute top-0 right-0 w-80 h-full z-10':'fixed right-[-100%]'}>
+      <div className={nav?'bg-white absolute top-0 right-0 w-full h-full z-10':'fixed right-[-100%]'}>
+
         <div className='flex justify-end p-4 '>
           <IoMdClose onClick={handleNav} className='hover:cursor-pointer hover:bg-black/10 p-1' size={35} />
         </div>
-        <ul className='px-2 pt-1 font-bold'>
-          <li className='py-3 px-3 my-2 hover:round hover:bg-black/5 cursor-pointer rounded-md'>Vehicles</li>
-          <li className='py-3 px-3 my-2 hover:round hover:bg-black/5 cursor-pointer rounded'>Energy</li>
-          <li className='py-3 px-3 my-2 hover:round hover:bg-black/5 cursor-pointer'> Charging</li>
-          <li className='py-3 px-3 my-2 hover:round hover:bg-black/5 cursor-pointer'>Discover</li>
-          <li className='py-3 px-3 my-2 hover:round hover:bg-black/5 cursor-point roundeder'>Shop</li>
-          <li className='py-3 px-3 my-2 hover:round hover:bg-black/5 cursor-pointer'>Support</li>
-        </ul>
+
+        <Menu/>
 
       </div>
     </div>
