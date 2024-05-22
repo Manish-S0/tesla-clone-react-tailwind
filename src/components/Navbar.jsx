@@ -3,7 +3,8 @@ import { TfiHelpAlt } from "react-icons/tfi";
 import { SlGlobe } from "react-icons/sl";
 import { VscAccount } from "react-icons/vsc";
 import { IoMdClose } from "react-icons/io";
-
+import NavItems from './Navbar/NavItems';
+import Navbar1 from './Navbar/Navbar1';
 import Menu from './Menu';
 
 const Navbar = () => {
@@ -12,6 +13,7 @@ const Navbar = () => {
   const handleNav=()=>{
     setNav(!nav)
   }
+
   return (
     <div className='flex justify-between items-center px-10 p-4 text-sm font-medium'>
       <div >
@@ -19,14 +21,10 @@ const Navbar = () => {
       </div>
 
       <div className='hidden lg:inline font-[600] text-center'>
-        <ul className='flex justify-center hover:cursor-pointer'>
-          <li className='py-1 px-3 hover:shadow'>Vehicles</li>
-          <li className='py-1 px-3 hover:shadow'>Energy</li>
-          <li className='py-1 px-3 hover:shadow'>Charging</li>
-          <li className='py-1 px-3 hover:shadow'>Discover</li>
-          <li className='py-1 px-3 hover:shadow'>Shop</li>
-        </ul>
+        
+        <NavItems navComponent={[{id:1,label:'Vehicles'},{id:2,label:'Energy'},{id:3,label:'Charging'},{id:4,label:'Discover'},{id:5,label:'Shop'}]}/>
       </div>
+
       <div className='hidden lg:inline'>
         <ul className='flex justify-center hover:cursor-pointer'>
           <li className='py-1 px-1 mx-1 hover:shadow'>
@@ -40,6 +38,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+
 
       <div className='lg:hidden'>
         <button onClick={handleNav} className='inline-flex rounded-md py-2 px-4 p-2 text-sm font-medium bg-black/5 shadow-sm hover:bg-black/10 items-center'>

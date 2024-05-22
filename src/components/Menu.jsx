@@ -8,9 +8,9 @@ const Menu = () => {
     <div >
       <div className='flex justify-between items-center hover:bg-black/5 font-[600] text-[17px] mx-5 my-3 rounded hover:cursor-pointer py-2'>
         <div className=' px-3 my-2 opacity-80'>Vehicles</div>
-          <div className='opacity-50'>
+        <div className='opacity-50'>
             <MdKeyboardArrowRight size={27}/>
-          </div>
+        </div>
       </div>
         <div className='flex justify-between items-center hover:bg-black/5 font-[600] text-[17px] mx-5 my-3 rounded hover:cursor-pointer py-2'>
           <div className='px-3 my-2 opacity-80'>Energy</div>
