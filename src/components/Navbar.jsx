@@ -12,20 +12,6 @@ const Navbar = () => {
   const handleNav=()=>{
     setNav(!nav)
   }
-  // useEffect(()=>{
-  //   const handleNav=()=>{
-  //     if (window.innerWidth>768) {
-  //       setNav(false)
-  //     }
-  //     else{
-  //       setNav(!nav)
-  //     }
-  //   }
-  //   window.addEventListener('resize',handleNav);
-  //   return ()=>{
-  //     window.removeEventListener('resize',handleNav)
-  //   }
-  // },[])
   return (
     <div className='flex justify-between items-center px-10 p-4 text-sm font-medium'>
       <div >
@@ -60,7 +46,7 @@ const Navbar = () => {
           Menu
         </button>
       </div>
-      <div className={nav?'bg-white absolute top-0 right-0 w-full h-full z-10':'fixed right-[-100%]'}>
+      <div className={`lg:hidden ${nav?'bg-white absolute top-0 right-0 w-full h-full z-10':'fixed right-[-100%]'}`}>
 
         <div className='flex justify-end p-4 '>
           <IoMdClose onClick={handleNav} className='hover:cursor-pointer hover:bg-black/10 p-1' size={35} />
