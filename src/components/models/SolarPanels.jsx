@@ -4,7 +4,7 @@ const SolarPanels = () => {
   return (
     <div>
 
-      <div className={`h-screen bg-cover bg-center bg-no-repeat bg-model-3`}>
+      <div className={`h-screen bg-cover bg-center bg-no-repeat bg-solar`}>
         <div>
           <div className='absolute pt-[17vh] left-[50%] translate-x-[-50%] inset-x-0  text-center'>
             <h1 className='text-4xl font-bold '>

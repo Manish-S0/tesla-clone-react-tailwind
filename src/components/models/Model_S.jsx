@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ModelS = ({title,price,description,leftButton,rightButton,image}) => {
+const ModelS = ({title,price,description,leftButton,rightButton,}) => {
   return (
     <div>
 
-      <div className={`h-screen bg-cover bg-center bg-no-repeat bg-model-S`}>
+      <div className={`h-screen bg-cover bg-center bg-no-repeat bg-model-s`}>
         <div>
           <div className='absolute pt-[17vh] left-[50%] translate-x-[-50%] inset-x-0  text-center'>
             <h1 className='text-4xl font-bold '>

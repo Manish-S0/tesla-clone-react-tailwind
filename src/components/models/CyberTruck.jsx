@@ -4,7 +4,7 @@ const CyberTruck = () => {
   return (
     <div>
 
-    <div className={`h-screen bg-cover bg-center bg-no-repeat bg-model-S`}>
+    <div className={`h-screen bg-cover bg-center bg-no-repeat bg-cybertruck`}>
       <div>
         
 
