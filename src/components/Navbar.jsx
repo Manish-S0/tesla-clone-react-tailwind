@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import { TfiHelpAlt } from "react-icons/tfi";
 import { SlGlobe } from "react-icons/sl";
 import { VscAccount } from "react-icons/vsc";
 import { IoMdClose } from "react-icons/io";
-// import NavItems from './Navbar/NavItems';
-// import Navbar1 from './Navbar/Navbar1';
 import Menu from './Menu';
+
 
 const Navbar = () => {
   const [nav,setNav]=useState(false)
@@ -53,13 +52,16 @@ const Navbar = () => {
       </div>
       <div className={`lg:hidden ${nav?'bg-white absolute top-0 right-0 w-full h-full z-10':'fixed right-[-100%]'}`}>
 
-        <div className='flex justify-end p-4 '>
-          <IoMdClose onClick={handleNav} className='hover:cursor-pointer hover:bg-black/10 p-1' size={35} />
-        </div>
+      <div className='flex justify-end p-4 '>
+        <IoMdClose onClick={handleNav} className='hover:cursor-pointer hover:bg-black/10 p-1' size={35} />
+      </div>   
 
         <Menu/>
 
       </div>
+
+      
+
     </div>
   )
 }

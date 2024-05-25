@@ -3,9 +3,13 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 import { SlGlobe } from "react-icons/sl";
 
+
 const Menu = () => {
   return (
     <div >
+
+       
+
       <div className='flex justify-between items-center hover:bg-black/5 font-[600] text-[17px] mx-5 my-3 rounded hover:cursor-pointer py-2'>
         <div className=' px-3 my-2 opacity-80'>Vehicles</div>
         <div className='opacity-50'>

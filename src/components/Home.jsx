@@ -5,7 +5,9 @@ import ModelS from './models/Model_S'
 
 const Home = () => {
   return (
-    <div className='h-100vh'>
+    
+    <div className={`h-100vh `}>
+
       <Section 
       title="Model 3"
       price="From $33,990"
@@ -31,6 +33,7 @@ const Home = () => {
       leftButton='Order Now'
       rightButton='Demo Drive'
       image='model-s'
+      text='white'
       />
 
 
@@ -53,6 +56,7 @@ const Home = () => {
       leftButton="Order Now"
       rightButton="Learn More"
       image="solar"
+      text="white"
       />
       
       <Section 
@@ -81,9 +85,6 @@ const Home = () => {
       rightButton=""
       image="accessories"
       />
-
-
-
 
     </div>
   )
