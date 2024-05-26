@@ -1,4 +1,4 @@
-Tesla Clone: A React & Tailwind CSS Project
+## Tesla Clone: A React & Tailwind CSS Project
 
 This project is a replica of the Tesla website, built using React JS and styled with Tailwind CSS. It leverages the power of Vite for a fast development experience.
 
