@@ -40,7 +40,8 @@ const Home = () => {
 
 
       <Section
-      title={assets.cybertruck_logo}
+      title=''
+      title_img={assets.Cybertruck_logo}
       price=''
       description=''
       leftButton='Order Now'

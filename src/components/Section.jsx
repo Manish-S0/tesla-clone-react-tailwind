@@ -1,16 +1,21 @@
 
 
-const Section = ({title,price,description,leftButton,rightButton,image,text}) => {
+const Section = ({title,price,description,leftButton,rightButton,image,text,title_img}) => {
   return (
     <div>
 
       <div className={`h-screen bg-cover bg-center bg-no-repeat bg-${image}`}>
         <div>
-          <div className={`absolute pt-[17vh] justify-center flex flex-col  inset-x-0 text-center text-${text}`}>
-            <h1 className='text-4xl font-bold '>
+          <div className={`absolute pt-[10vh] justify-center flex flex-col  inset-x-0 text-center text-${text}`}>
+            {title? <div>
+              <h1 className='text-4xl font-bold '>
               {title}
-            </h1>
-            <p className='text-sm font-semibold p-1'>{price}</p>
+              </h1>
+            </div>:<div className="absolute left-[35%] pt-[10vh] flex flex-col w-[30%] "><img src={title_img} alt="" /></div>
+
+            }
+            
+            <p className='text-xl font-semibold '>{price}</p>
             <h6 className='text-xl'>{description}</h6>
           </div>
 
