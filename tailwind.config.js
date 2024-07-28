@@ -14,7 +14,7 @@ export default {
         'solar': "url('./src/assets/solarpanels.avif')",
         'solarroof': "url('./src/assets/solarRoof.avif')",
         'powerwall':'url("./src/assets/Powerwall.avif")',
-        'cybertruck':'url("./src/assets/cyberTruck.avif")',
+        'cybertruck':'url("./src/assets/Cybertruck.avif")',
         'accessories':'url("./src/assets/Accessories.avif")'
       },
     },
