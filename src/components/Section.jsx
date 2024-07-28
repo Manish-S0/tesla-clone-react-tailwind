@@ -6,12 +6,12 @@ const Section = ({title,price,description,leftButton,rightButton,image,text}) =>
 
       <div className={`h-screen bg-cover bg-center bg-no-repeat bg-${image}`}>
         <div>
-          <div className={`absolute pt-[17vh] left-[50%] translate-x-[-50%] inset-x-0  text-center text-${text}`}>
+          <div className={`absolute pt-[17vh] justify-center flex flex-col  inset-x-0 text-center text-${text}`}>
             <h1 className='text-4xl font-bold '>
               {title}
             </h1>
             <p className='text-sm font-semibold p-1'>{price}</p>
-            <h6 className='text-xs'>{description}</h6>
+            <h6 className='text-xl'>{description}</h6>
           </div>
 
         </div>
