@@ -4,7 +4,7 @@
 const Hero = () => {
   return (
     <div>
-      <div className='h-screen bg-cover bg-no-repeat bg-center bg-model-y relative z-1'>
+      <div className='h-screen bg-cover bg-no-repeat bg-center bg-model-y'>
         
         <div>
           <div className='absolute pt-[14vh] left-[50%] translate-x-[-50%] inset-x-0  text-center'>

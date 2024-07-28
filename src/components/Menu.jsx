@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 import { SlGlobe } from "react-icons/sl";
@@ -6,7 +6,7 @@ import { SlGlobe } from "react-icons/sl";
 
 const Menu = () => {
   return (
-    <div >
+    <div className='fixed w-full h-screen bg-white z-20'>
 
        
 
