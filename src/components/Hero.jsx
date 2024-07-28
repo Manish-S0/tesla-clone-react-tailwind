@@ -1,13 +1,11 @@
-import React from 'react'
-import Navbar from './Navbar'
+
+
 
 const Hero = () => {
   return (
     <div>
       <div className='h-screen bg-cover bg-no-repeat bg-center bg-model-y'>
-
-        <Navbar/>
-
+        
         <div>
           <div className='absolute pt-[7vh] left-[50%] translate-x-[-50%] inset-x-0  text-center'>
             <h1 className='text-[40px] font-semibold '>

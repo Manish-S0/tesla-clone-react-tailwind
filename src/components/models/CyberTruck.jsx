@@ -1,11 +1,12 @@
-import React from 'react'
 
-const CyberTruck = () => {
+
+const CyberTruck = ({leftButton, rightButton}) => {
   return (
     <div>
 
     <div className={`h-screen bg-cover bg-center bg-no-repeat bg-cybertruck`}>
       <div>
+        <img src="./src/assets/images/Cybertruck_logo.svg" alt="" />
         
 
       </div>

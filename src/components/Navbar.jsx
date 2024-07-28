@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import  {useState } from 'react'
 import { TfiHelpAlt } from "react-icons/tfi";
 import { SlGlobe } from "react-icons/sl";
 import { VscAccount } from "react-icons/vsc";

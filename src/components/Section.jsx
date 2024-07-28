@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Section = ({title,price,description,leftButton,rightButton,image,text}) => {
   return (

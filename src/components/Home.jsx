@@ -1,6 +1,7 @@
-import React from 'react'
+
 import Section from './Section'
-import ModelS from './models/Model_S'
+
+import { assets } from '../assets/assets';
 
 
 const Home = () => {
@@ -39,7 +40,7 @@ const Home = () => {
 
 
       <Section
-      title='Cybertruck'
+      title={assets.cybertruck_logo}
       price=''
       description=''
       leftButton='Order Now'
