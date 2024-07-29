@@ -4,6 +4,7 @@ import { SlGlobe } from "react-icons/sl";
 import { VscAccount } from "react-icons/vsc";
 import { IoMdClose } from "react-icons/io";
 import Menu from './Menu';
+import Vehicles from './dropdown/Vehicles';
 
 
 const Navbar = () => {
@@ -56,6 +57,16 @@ const Navbar = () => {
       };
   }, []);
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setIsDropdownOpen(index);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(null);
+  };
+
   return (
 
     <div className={`fixed w-full flex justify-between items-center px-9 p-2 text-sm font-medium ${show?'transform translate-y-0  z-10 duration-700 ' : 'transform translate-y-[-100%] bg-white text-black z-10 duration-700'} ${transparent ? 'bg-transparent' : 'bg-white text-black'}`}>
@@ -66,11 +77,15 @@ const Navbar = () => {
       <div className='hidden lg:inline font-[600] text-center'>
         
         <ul className="flex justify-center hover:cursor-pointer">
-          <li className='py-1 px-4 hover:shadow'>Vehicles</li>
-          <li className='py-1 px-4 hover:shadow'>Energy</li>
-          <li className='py-1 px-4 hover:shadow'>Charging</li>
-          <li className='py-1 px-4 hover:shadow'>Discover</li>
-          <li className='py-1 px-4 hover:shadow'>Shop</li>
+          <li className='py-1 px-4 hover:shadow' onMouseEnter={()=>handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>Vehicles</li>
+
+          <li className='py-1 px-4 hover:shadow' onMouseEnter={()=>handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>Energy</li>
+
+          <li className='py-1 px-4 hover:shadow' onMouseEnter={()=>handleMouseEnter(3)} onMouseLeave={handleMouseLeave}>Charging</li>
+
+          <li className='py-1 px-4 hover:shadow' onMouseEnter={()=>handleMouseEnter(4)} onMouseLeave={handleMouseLeave}>Discover</li>
+
+          <li className='py-1 px-4 hover:shadow' onMouseEnter={()=>handleMouseEnter(5)} onMouseLeave={handleMouseLeave}>Shop</li>
         </ul>
       </div>
 
@@ -104,9 +119,26 @@ const Navbar = () => {
 
       </div>
 
+      {/* Dropdown content */}
+      {isDropdownOpen ===1 && (
+        <div 
+          className="absolute top-10 inset-x-0 bg-white shadow-lg h-[460px] w-full"
+          onMouseEnter={()=>handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <Vehicles />
+        </div>
+      )}
+      </div>
+
       
 
-    </div>
+      
+
+
+      
+
+    
   )
 }
 
