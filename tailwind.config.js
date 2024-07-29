@@ -7,15 +7,15 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'model-3': "url('./src/assets/model-3.avif')",
-        'model-x': "url('./src/assets/model-x.avif')",
-        'model-y': "url('./src/assets/model-y.avif')",
-        'model-s':"url('./src/assets/Model-S.avif')",
-        'solar': "url('./src/assets/solarpanels.avif')",
-        'solarroof': "url('./src/assets/solarRoof.avif')",
-        'powerwall':'url("./src/assets/Powerwall.avif")',
-        'cybertruck':'url("./src/assets/cyberTruck.avif")',
-        'accessories':'url("./src/assets/Accessories.avif")'
+        'model-3': "url('/src/assets/model-3.avif')",
+        'model-x': "url('/src/assets/model-x.avif')",
+        'model-y': "url('/src/assets/model-y.avif')",
+        'model-s':"url('/src/assets/Model-S.avif')",
+        'solar': "url('/src/assets/solarpanels.avif')",
+        'solarroof': "url('/src/assets/solarRoof.avif')",
+        'powerwall':'url("/src/assets/Powerwall.avif")',
+        'cybertruck':'url("/src/assets/cyberTruck.avif")',
+        'accessories':'url("/src/assets/Accessories.avif")'
       },
     },
     screens: {

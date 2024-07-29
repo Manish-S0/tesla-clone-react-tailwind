@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const ModelS = ({title,price,description,leftButton,rightButton,}) => {
   return (
